@@ -1,0 +1,31 @@
+<h1>Este es el primer componente de {{nombre}}</h1>
+
+<button (click)="AumentarEdad()">Aumentar</button>
+<button (click)="DisminuirEdad()">Disminuir</button>
+
+
+<!--Esto es un ejemplo de que también se podría poner un condicional-->
+<h3 [style.background]="edad >=18 ? 'green' : 'red'"
+    [style.color]="'white'">
+    
+    Tienes {{edad}} años
+</h3>
+
+<div *ngIf="edad >= 18">
+    <p>Ya eres mayor de edad</p>
+</div>
+<div *ngIf="edad < 18">
+    <p>Ya eres menor de edad</p>
+</div>
+
+
+<!--<h3>Lista de nombres</h3>
+{{nombres[0]}}-->
+
+<!--Esto lo que hace es como autocompletar los li, lo que pasa es que el ngFor es el que recorre todo y lo autocompleta-->
+<h3>listado de nombres</h3>
+<ul style="list-style: none;">
+    <li *ngFor="let nombre of nombres; let i = index">
+        {{i}}. {{nombre}}
+    </li>
+</ul>
