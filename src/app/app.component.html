@@ -1,5 +1,12 @@
 <h1>Bienvenido a Angular con {{nombre}} - {{title}} </h1>
 <h2>{{nombre}}</h2>
+<h3>number: {{number}}</h3>
+
+<input type="text" [(ngModel)]="nombre" (input)="addOne()"/>
+
+@if (condition) {
+    <h4>La condición es verdadera</h4>
+}
 
 <div style="border: solid 3px red;">
     <mi-componente></mi-componente>
