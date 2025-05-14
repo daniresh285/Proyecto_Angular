@@ -4,6 +4,8 @@
 
 <input type="text" [(ngModel)]="nombre" (input)="addOne()"/>
 
+<br>
+
 @if (condition) {
     <h4>La condición es verdadera</h4>
 }
@@ -12,4 +14,13 @@
     <mi-componente></mi-componente>
     
     <segundo-componente></segundo-componente>
+
+    <!--
+    Esta línea muestra un componente llamado 'app-child'.
+    Le pasa dos cosas:
+    - Un mensaje de texto ('Text') a la propiedad 'msg'.
+    - Una persona (el objeto 'person') a la propiedad 'person'.
+    El componente hijo usará esos valores.
+    -->
+    <app-child [msg]="Text" [person]="person"></app-child>
 </div>

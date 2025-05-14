@@ -28,5 +28,5 @@ DisminuirEdad() {
 }
 
 
-console.log("Mi-componente se ha cargado totalmente")
+console.log("\nMi-componente se ha cargado totalmente")
 // Este es un componente de ejemplo en Angular, hecho por Daniel De Los Reyes, esto lo que hace es generar un log en la cmd
